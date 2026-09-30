@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # CodeAlpha Student Academic Performance Management System
 
 ## Problem Statement
@@ -20,3 +21,6 @@ This project is a desktop-based Java application built to manage student academi
 3. Update `src/main/resources/config.properties` with your database credentials.
 4. Run using Maven: `mvn clean javafx:run`
 5. Default login: Username `admin` / Password `admin123`
+=======
+# StudentGradeTracker
+>>>>>>> 6856c645bfdebdbfd248b6f32d0179f1dd21d09b
