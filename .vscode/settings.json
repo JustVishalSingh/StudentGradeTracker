@@ -1,0 +1,10 @@
+{
+    "java.project.sourcePaths": [
+        "src/main/java"
+    ],
+    "java.project.referencedLibraries": [
+        "lib/**/*.jar"
+    ],
+    "maven.executable.path": "mvn",
+    "java.configuration.updateBuildConfiguration": "automatic"
+}

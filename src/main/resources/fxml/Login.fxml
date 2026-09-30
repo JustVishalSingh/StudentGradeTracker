@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+
+<StackPane styleClass="login-bg" prefHeight="620.0" prefWidth="900.0"
+           xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1"
+           fx:controller="com.studentgrade.controller.LoginController"
+           stylesheets="@../css/style.css">
+
+    <VBox alignment="CENTER" maxWidth="440" styleClass="login-container" spacing="18">
+
+        <Label text="🎓 Academic Performance System" styleClass="login-header"/>
+        <Label text="Sign in to continue" styleClass="login-subtitle"/>
+
+        <VBox spacing="5">
+            <Label text="Username"/>
+            <TextField fx:id="usernameField" promptText="Enter your username"/>
+        </VBox>
+
+        <VBox spacing="5">
+            <Label text="Password"/>
+            <PasswordField fx:id="passwordField" promptText="Enter your password"/>
+        </VBox>
+
+        <Label fx:id="errorLabel" styleClass="error-text" visible="false" wrapText="true"/>
+
+        <Button fx:id="loginBtn" text="Login" styleClass="btn-primary"
+                maxWidth="Infinity" onAction="#handleLogin"/>
+
+        <Label text="Default: admin / admin123" style="-fx-text-fill: #9ca3af; -fx-font-size: 11px;" alignment="CENTER"/>
+    </VBox>
+</StackPane>
